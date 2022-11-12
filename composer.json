@@ -10,6 +10,7 @@
         "php": ">=8.1",
         "laravel/tinker": "^2.7",
         "pandawa/bus-bundle": "^5.0",
+        "pandawa/database-bundle": "^5.0",
         "pandawa/foundation-bundle": "^5.0",
         "pandawa/horizon-bundle": "^5.0",
         "pandawa/queue-bundle": "^5.0",

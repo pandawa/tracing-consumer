@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5badd40a2ca8a2915e192c896cd1efcf",
+    "content-hash": "339967b2ed69b1e0e3ad20cecfd78ee8",
     "packages": [
         {
             "name": "brick/math",
@@ -2782,6 +2782,63 @@
                 "source": "https://github.com/pandawa/config-contracts/tree/master"
             },
             "time": "2022-07-26T09:22:11+00:00"
+        },
+        {
+            "name": "pandawa/database-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pandawa/database-bundle.git",
+                "reference": "6120f81b2e5fb64ec3524c584b2768a50d8555cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pandawa/database-bundle/zipball/6120f81b2e5fb64ec3524c584b2768a50d8555cb",
+                "reference": "6120f81b2e5fb64ec3524c584b2768a50d8555cb",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^9.0",
+                "pandawa/dependency-injection-bundle": "^5.0",
+                "pandawa/foundation-bundle": "^5.0",
+                "php": ">=8.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Pandawa\\Bundle\\DatabaseBundle\\DatabaseBundle"
+                    ],
+                    "aliases": {
+                        "DB": "Illuminate\\Support\\Facades\\DB"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Pandawa\\Bundle\\DatabaseBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Iqbal Maulana",
+                    "email": "iq.bluejack@gmail.com"
+                }
+            ],
+            "description": "The pandawa database bundle",
+            "support": {
+                "issues": "https://github.com/pandawa/database-bundle/issues",
+                "source": "https://github.com/pandawa/database-bundle/tree/master"
+            },
+            "time": "2022-09-05T15:22:35+00:00"
         },
         {
             "name": "pandawa/dependency-injection",
