@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('QUEUE_CONNECTION', 'sync'),
+    'default' => env('QUEUE_CONNECTION', env('TRACING_CONNECTION', 'redis')),
 
     /*
     |--------------------------------------------------------------------------
@@ -62,7 +62,7 @@ return [
             'after_commit' => false,
         ],
 
-        'redis' => [
+        env('TRACING_CONNECTION', 'redis') => [
             'driver'       => 'redis',
             'connection'   => 'default',
             'queue'        => env('REDIS_QUEUE', 'default'),

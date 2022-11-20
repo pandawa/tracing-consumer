@@ -166,7 +166,7 @@ return [
 
     'defaults' => [
         'supervisor-logger' => [
-            'connection'   => 'redis',
+            'connection'   => env('TRACING_CONNECTION', 'redis'),
             'queue'        => ['default', 'log'],
             'balance'      => 'auto',
             'maxProcesses' => 1,
