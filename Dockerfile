@@ -6,6 +6,8 @@ RUN set -eux; \
     install-php-extensions \
       pcntl \
       redis \
+      pdo_pgsql \
+      pdo_mysql \
     ;
 
 COPY . .
